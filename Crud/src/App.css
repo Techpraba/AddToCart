@@ -1,0 +1,75 @@
+.cardOverall{
+  
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.show{
+    width: 400px;
+    height: 600px;
+    background-color:rgba(0, 0, 0, 0.573);
+    border: 2px solid gold;
+    position: absolute;
+    backdrop-filter: blur 2px ;
+    right: 0;
+    top: 80px;
+ transition-duration: 1s;
+    padding: 10px;
+    overflow-y: scroll;
+    position: fixed;
+   }
+ 
+   .hide{
+    right: -100px; 
+    display: none;
+   }
+   .billdata{
+    height: 90%;
+    margin-left: 20px;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    flex-direction: column;
+  
+   }
+   .cakeBills{
+    display: flex;
+
+
+    
+   }
+   .b{
+    color: gold;
+   }
+   .cakeBills h3{
+    color:white;
+   }
+
+  table,td,th{
+   padding: 10px;
+   width: 100%;
+   color: white;
+
+  }
+  td{
+    width: 100%;
+  }
+  th{
+    color:gold;
+    border-bottom: 2px solid gold;
+  }
+  .cakeBills h1{
+    color: white;
+    
+  }
+  .total{
+    height: 400px;
+    display: flex;
+  align-items: end;
+    color: white;
+   
+
+  }
+  .cakename{
+   text-align: left;
+  }

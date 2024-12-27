@@ -1,0 +1,23 @@
+<input type='text' className={active == true ? "active" : "deactive"} onChange={filterofcake} />
+                    <LuSearchCode className='icons1' onClick={a} />
+                    <FaOpencart onClick={bill} />
+
+
+
+                    import { LuSearchCode } from "react-icons/lu";
+import { FaOpencart } from "react-icons/fa";
+
+
+
+
+  const [users, setUsers] = useState([
+    { id: 1, name: 'Alice', age: 30 },
+    { id: 2, name: 'Bob', age: 24 },
+    { id: 3, name: 'Charlie', age: 28 }
+   ]);
+   
+   const updateUserAge = (userId, newAge) => {
+    setUsers(users.map(user =>
+      user.id === userId ? { ...user, age: newAge } : user
+    ));
+   };
